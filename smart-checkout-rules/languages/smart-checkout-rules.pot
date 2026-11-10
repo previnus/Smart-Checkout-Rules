@@ -1,0 +1,705 @@
+# Copyright (C) 2026 Previn Kalisetty Appadu
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Smart Checkout Rules 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/smart-checkout-rules\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-10T05:49:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: smart-checkout-rules\n"
+
+#. Plugin Name of the plugin
+#: smart-checkout-rules.php
+#: includes/Admin/AdminPage.php:13
+#: includes/Admin/AdminPage.php:39
+msgid "Smart Checkout Rules"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: smart-checkout-rules.php
+msgid "https://previn.me"
+msgstr ""
+
+#. Description of the plugin
+#: smart-checkout-rules.php
+msgid "Conditional payment methods, checkout validation, order limits, and shipping restrictions for WooCommerce."
+msgstr ""
+
+#. Author of the plugin
+#: smart-checkout-rules.php
+msgid "Previn Kalisetty Appadu"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:14
+msgid "Checkout Rules"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:40
+msgid "Set payment, validation, order limit, and shipping rules. Use the simulator to test your changes before saving."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:41
+msgid "Enable JavaScript to manage checkout rules."
+msgstr ""
+
+#: includes/Admin/AdminPage.php:51
+msgid "Locations outside your other zones"
+msgstr ""
+
+#: includes/Admin/AdminPage.php:57
+msgid "Guest"
+msgstr ""
+
+#: includes/Admin/RulesRestController.php:54
+msgid "The rules changed or could not be saved. Reload the page before trying again."
+msgstr ""
+
+#. translators: %s: path of an invalid rule setting.
+#: includes/Admin/RulesRestController.php:131
+#, php-format
+msgid "Check this setting: %s."
+msgstr ""
+
+#: includes/Integrations/BlocksCheckout.php:90
+#: includes/Integrations/ClassicCheckout.php:24
+#: includes/Rules/RuleSchema.php:68
+msgid "Purchase order reference"
+msgstr ""
+
+#: includes/Integrations/CheckoutPolicy.php:86
+msgid "Your selected shipping method is unavailable. Choose another shipping method."
+msgstr ""
+
+#: includes/Integrations/CheckoutPolicy.php:105
+msgid "Your selected payment method is unavailable for this order. Choose another method."
+msgstr ""
+
+#. translators: %s: additional merchandise amount or number of units.
+#: includes/Integrations/CheckoutPolicy.php:142
+#, php-format
+msgid "Still needed: %s."
+msgstr ""
+
+#: includes/Integrations/CheckoutPolicy.php:146
+msgid "No payment method is available for this order. Update your checkout details or contact the store for help."
+msgstr ""
+
+#: includes/Integrations/CheckoutPolicy.php:155
+msgid "No shipping method is available for part of this order. Update your delivery address or contact the store for help."
+msgstr ""
+
+#: includes/Modules/CheckoutValidation.php:61
+msgid "This order cannot be placed with the current checkout details."
+msgstr ""
+
+#. translators: %s: checkout field label.
+#: includes/Modules/CheckoutValidation.php:65
+#, php-format
+msgid "Please complete the %s field."
+msgstr ""
+
+#. translators: %s: checkout field label.
+#: includes/Modules/CheckoutValidation.php:68
+#, php-format
+msgid "Please enter a valid value for %s."
+msgstr ""
+
+#. translators: %s: number of units.
+#: includes/Modules/OrderLimits.php:66
+#, php-format
+msgid "Add at least %s qualifying units before checking out."
+msgstr ""
+
+#. translators: %s: number of units.
+#: includes/Modules/OrderLimits.php:70
+#, php-format
+msgid "Your order can contain at most %s qualifying units."
+msgstr ""
+
+#. translators: %s: price with currency.
+#: includes/Modules/OrderLimits.php:74
+#, php-format
+msgid "Your qualifying merchandise subtotal must be at least %s."
+msgstr ""
+
+#. translators: %s: price with currency.
+#: includes/Modules/OrderLimits.php:77
+#, php-format
+msgid "Your qualifying merchandise subtotal can be at most %s."
+msgstr ""
+
+#: includes/Plugin.php:41
+msgid "Smart Checkout Rules requires PHP 8.3, WordPress 6.8 and WooCommerce 10.5 or newer."
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:59
+msgid "Billing company"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:60
+msgid "Billing email"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:61
+msgid "Billing phone"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:62
+msgid "Billing postcode"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:63
+msgid "Billing address line 2"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:64
+msgid "Shipping company"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:65
+msgid "Shipping phone"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:66
+msgid "Shipping postcode"
+msgstr ""
+
+#: includes/Rules/RuleSchema.php:67
+msgid "Shipping address line 2"
+msgstr ""
+
+#: assets/admin/admin.js:12
+msgid "Payment methods"
+msgstr ""
+
+#: assets/admin/admin.js:12
+msgid "Shipping restrictions"
+msgstr ""
+
+#: assets/admin/admin.js:13
+msgid "Order limits"
+msgstr ""
+
+#: assets/admin/admin.js:13
+msgid "Checkout validation"
+msgstr ""
+
+#: assets/admin/admin.js:16
+msgid "Equals"
+msgstr ""
+
+#: assets/admin/admin.js:16
+msgid "Does not equal"
+msgstr ""
+
+#: assets/admin/admin.js:16
+msgid "Less than"
+msgstr ""
+
+#: assets/admin/admin.js:16
+msgid "At most"
+msgstr ""
+
+#: assets/admin/admin.js:17
+msgid "Greater than"
+msgstr ""
+
+#: assets/admin/admin.js:17
+msgid "At least"
+msgstr ""
+
+#: assets/admin/admin.js:17
+msgid "Matches any of"
+msgstr ""
+
+#: assets/admin/admin.js:18
+msgid "Matches none of"
+msgstr ""
+
+#: assets/admin/admin.js:18
+msgid "Is empty"
+msgstr ""
+
+#: assets/admin/admin.js:18
+msgid "Is present"
+msgstr ""
+
+#: assets/admin/admin.js:21
+msgid "Hide gateway"
+msgstr ""
+
+#: assets/admin/admin.js:21
+msgid "Allow eligible gateway"
+msgstr ""
+
+#: assets/admin/admin.js:22
+msgid "Hide shipping rates"
+msgstr ""
+
+#: assets/admin/admin.js:22
+msgid "Keep only quote method"
+msgstr ""
+
+#: assets/admin/admin.js:23
+msgid "Minimum"
+msgstr ""
+
+#: assets/admin/admin.js:23
+msgid "Maximum"
+msgstr ""
+
+#: assets/admin/admin.js:23
+msgid "Require a field"
+msgstr ""
+
+#: assets/admin/admin.js:24
+msgid "Check field length"
+msgstr ""
+
+#: assets/admin/admin.js:24
+msgid "Allow email domains"
+msgstr ""
+
+#: assets/admin/admin.js:25
+msgid "Block email domains"
+msgstr ""
+
+#: assets/admin/admin.js:25
+msgid "Match a pattern"
+msgstr ""
+
+#: assets/admin/admin.js:26
+msgid "Validate postcode"
+msgstr ""
+
+#: assets/admin/admin.js:26
+msgid "Validate phone"
+msgstr ""
+
+#: assets/admin/admin.js:26
+msgid "Block checkout"
+msgstr ""
+
+#: assets/admin/admin.js:29
+msgid "Subtotal after discounts, excluding tax"
+msgstr ""
+
+#: assets/admin/admin.js:30
+msgid "Subtotal before discounts, excluding tax"
+msgstr ""
+
+#: assets/admin/admin.js:31
+msgid "Subtotal after discounts, including tax"
+msgstr ""
+
+#: assets/admin/admin.js:32
+msgid "Subtotal before discounts, including tax"
+msgstr ""
+
+#: assets/admin/admin.js:33
+msgid "Item quantity"
+msgstr ""
+
+#: assets/admin/admin.js:110
+msgid "Unsaved changes."
+msgstr ""
+
+#: assets/admin/admin.js:139
+msgid "Rules and settings saved."
+msgstr ""
+
+#: assets/admin/admin.js:142
+msgid "Saved the submitted version. Newer changes are still unsaved."
+msgstr ""
+
+#: assets/admin/admin.js:145
+msgid "The rules could not be saved."
+msgstr ""
+
+#: assets/admin/admin.js:169
+msgid "The rule limit has been reached."
+msgstr ""
+
+#: assets/admin/admin.js:195
+msgid "Condition group"
+msgstr ""
+
+#: assets/admin/admin.js:195
+msgid "Conditions"
+msgstr ""
+
+#: assets/admin/admin.js:198
+msgid "Match"
+msgstr ""
+
+#: assets/admin/admin.js:198
+msgid "All conditions (AND)"
+msgstr ""
+
+#: assets/admin/admin.js:198
+msgid "Any condition (OR)"
+msgstr ""
+
+#: assets/admin/admin.js:208
+msgid "Remove condition"
+msgstr ""
+
+#: assets/admin/admin.js:214
+msgid "Field"
+msgstr ""
+
+#: assets/admin/admin.js:215
+msgid "Operator"
+msgstr ""
+
+#: assets/admin/admin.js:224
+msgid "True"
+msgstr ""
+
+#: assets/admin/admin.js:226
+msgid "Values, comma separated"
+msgstr ""
+
+#: assets/admin/admin.js:228
+msgid "Value"
+msgstr ""
+
+#: assets/admin/admin.js:234
+msgid "Add condition"
+msgstr ""
+
+#: assets/admin/admin.js:235
+msgid "Add nested group"
+msgstr ""
+
+#: assets/admin/admin.js:243
+#, js-format
+msgid "Action %d"
+msgstr ""
+
+#: assets/admin/admin.js:244
+msgid "Action"
+msgstr ""
+
+#: assets/admin/admin.js:256
+msgid "Gateway ID"
+msgstr ""
+
+#: assets/admin/admin.js:258
+msgid "Rate or method ID"
+msgstr ""
+
+#: assets/admin/admin.js:261
+msgid "Measure"
+msgstr ""
+
+#: assets/admin/admin.js:262
+msgid "Threshold"
+msgstr ""
+
+#: assets/admin/admin.js:263
+msgid "Currency: store or three-letter code"
+msgstr ""
+
+#: assets/admin/admin.js:264
+msgid "Show remaining amount"
+msgstr ""
+
+#: assets/admin/admin.js:265
+msgid "Qualifying product IDs"
+msgstr ""
+
+#: assets/admin/admin.js:265
+msgid "Qualifying category IDs"
+msgstr ""
+
+#: assets/admin/admin.js:277
+msgid "Checkout field"
+msgstr ""
+
+#: assets/admin/admin.js:279
+msgid "Minimum length"
+msgstr ""
+
+#: assets/admin/admin.js:280
+msgid "Maximum length"
+msgstr ""
+
+#: assets/admin/admin.js:282
+msgid "Pattern without delimiters"
+msgstr ""
+
+#: assets/admin/admin.js:283
+msgid "Domains, comma separated"
+msgstr ""
+
+#: assets/admin/admin.js:286
+msgid "Remove action"
+msgstr ""
+
+#: assets/admin/admin.js:298
+#: assets/admin/admin.js:308
+msgid "New rule"
+msgstr ""
+
+#: assets/admin/admin.js:300
+#: assets/admin/admin.js:317
+msgid "Enabled"
+msgstr ""
+
+#: assets/admin/admin.js:300
+msgid "Disabled"
+msgstr ""
+
+#: assets/admin/admin.js:308
+msgid "Name"
+msgstr ""
+
+#: assets/admin/admin.js:309
+#: assets/admin/admin.js:338
+msgid "Module"
+msgstr ""
+
+#: assets/admin/admin.js:310
+msgid "Changing the module resets this rule’s conditions and actions. Continue?"
+msgstr ""
+
+#: assets/admin/admin.js:316
+msgid "Priority"
+msgstr ""
+
+#: assets/admin/admin.js:318
+msgid "Stop after this rule matches"
+msgstr ""
+
+#: assets/admin/admin.js:319
+msgid "Customer message"
+msgstr ""
+
+#: assets/admin/admin.js:323
+msgid "Add action"
+msgstr ""
+
+#: assets/admin/admin.js:324
+msgid "Duplicate"
+msgstr ""
+
+#: assets/admin/admin.js:324
+msgid "(copy)"
+msgstr ""
+
+#: assets/admin/admin.js:325
+msgid "Delete"
+msgstr ""
+
+#: assets/admin/admin.js:326
+msgid "Delete this rule from your draft?"
+msgstr ""
+
+#: assets/admin/admin.js:337
+msgid "Search rules"
+msgstr ""
+
+#: assets/admin/admin.js:338
+msgid "All modules"
+msgstr ""
+
+#: assets/admin/admin.js:345
+#, js-format
+msgid "Select %s"
+msgstr ""
+
+#: assets/admin/admin.js:345
+msgid "new rule"
+msgstr ""
+
+#: assets/admin/admin.js:351
+msgid "No rules match."
+msgstr ""
+
+#: assets/admin/admin.js:359
+msgid "Add rule"
+msgstr ""
+
+#: assets/admin/admin.js:359
+msgid "Enable selected"
+msgstr ""
+
+#: assets/admin/admin.js:360
+msgid "Disable selected"
+msgstr ""
+
+#: assets/admin/admin.js:365
+msgid "Hypothetical cart and one shipping package"
+msgstr ""
+
+#: assets/admin/admin.js:366
+msgid "Use fictional checkout details. If you add simulated line items, their quantities and subtotals replace the cart totals below."
+msgstr ""
+
+#: assets/admin/admin.js:381
+#: assets/admin/admin.js:407
+msgid "Available gateways"
+msgstr ""
+
+#: assets/admin/admin.js:382
+msgid "Available rate IDs"
+msgstr ""
+
+#: assets/admin/admin.js:386
+#, js-format
+msgid "Line %d"
+msgstr ""
+
+#: assets/admin/admin.js:389
+msgid "Remove line"
+msgstr ""
+
+#: assets/admin/admin.js:392
+msgid "Add simulated line"
+msgstr ""
+
+#: assets/admin/admin.js:393
+msgid "Run simulation"
+msgstr ""
+
+#: assets/admin/admin.js:399
+msgid "Simulation failed."
+msgstr ""
+
+#: assets/admin/admin.js:405
+msgid "Rules would block checkout"
+msgstr ""
+
+#: assets/admin/admin.js:405
+msgid "Rules would allow checkout"
+msgstr ""
+
+#: assets/admin/admin.js:406
+msgid "This result evaluates your rules. WooCommerce and other plugins may enforce additional requirements."
+msgstr ""
+
+#: assets/admin/admin.js:408
+msgid "Available rates"
+msgstr ""
+
+#: assets/admin/admin.js:435
+msgid "Select a JSON file under 1.5 MB."
+msgstr ""
+
+#: assets/admin/admin.js:439
+msgid "Invalid checkout rules file."
+msgstr ""
+
+#: assets/admin/admin.js:442
+msgid "Replace the draft rules and settings with this file? Save to apply the import."
+msgstr ""
+
+#: assets/admin/admin.js:449
+msgid "Import failed."
+msgstr ""
+
+#: assets/admin/admin.js:453
+msgid "Enabled modules"
+msgstr ""
+
+#: assets/admin/admin.js:455
+msgid "Diagnostics and uninstall"
+msgstr ""
+
+#: assets/admin/admin.js:456
+msgid "Log blocked payment and shipping events with rule IDs"
+msgstr ""
+
+#: assets/admin/admin.js:457
+msgid "Delete plugin configuration on uninstall"
+msgstr ""
+
+#: assets/admin/admin.js:458
+msgid "Import and export"
+msgstr ""
+
+#: assets/admin/admin.js:459
+msgid "Export current draft"
+msgstr ""
+
+#: assets/admin/admin.js:460
+msgid "Rules JSON file"
+msgstr ""
+
+#: assets/admin/admin.js:460
+msgid "Validate and import"
+msgstr ""
+
+#: assets/admin/admin.js:465
+msgid "Overview"
+msgstr ""
+
+#: assets/admin/admin.js:465
+#, js-format
+msgid "%d active rules."
+msgstr ""
+
+#: assets/admin/admin.js:466
+#, js-format
+msgid "%d invalid stored rules were skipped. Review the existing rules before saving."
+msgstr ""
+
+#: assets/admin/admin.js:468
+msgid "Example rules"
+msgstr ""
+
+#: assets/admin/admin.js:470
+msgid "Hide cash on delivery on large orders"
+msgstr ""
+
+#: assets/admin/admin.js:474
+msgid "Require a merchandise subtotal of 50"
+msgstr ""
+
+#: assets/admin/admin.js:477
+msgid "Require a company for business customers"
+msgstr ""
+
+#: assets/admin/admin.js:480
+msgid "Hide flat rate for oversized packages"
+msgstr ""
+
+#: assets/admin/admin.js:489
+msgid "Checkout Rules sections"
+msgstr ""
+
+#: assets/admin/admin.js:490
+msgid "Dashboard"
+msgstr ""
+
+#: assets/admin/admin.js:490
+msgid "Rules"
+msgstr ""
+
+#: assets/admin/admin.js:490
+msgid "Simulator"
+msgstr ""
+
+#: assets/admin/admin.js:490
+msgid "Settings"
+msgstr ""
+
+#: assets/admin/admin.js:497
+msgid "Save rules and settings"
+msgstr ""
+
+#: assets/admin/admin.js:513
+msgid "Loading checkout rules…"
+msgstr ""
+
+#: assets/admin/admin.js:519
+msgid "Checkout rules could not be loaded."
+msgstr ""

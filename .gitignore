@@ -1,0 +1,10 @@
+.env
+.env.*
+*.log
+__pycache__/
+node_modules/
+vendor/
+wp-config.php
+*.sqlite
+*.sqlite3
+*.sql

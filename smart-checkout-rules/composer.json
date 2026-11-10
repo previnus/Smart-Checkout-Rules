@@ -1,0 +1,8 @@
+{
+  "name": "previnus/smart-checkout-rules",
+  "description": "Conditional payment methods, checkout validation, order limits, and shipping restrictions for WooCommerce.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": { "php": ">=8.3" },
+  "autoload": { "psr-4": { "SmartCheckoutRules\\": "includes/" } }
+}

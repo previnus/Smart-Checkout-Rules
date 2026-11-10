@@ -111,7 +111,8 @@
     }
 
     function edit(object, key, value) {
-        object[key] = value;
+        if (key === '__proto__' || key === 'constructor' || key === 'prototype') return;
+        Object.defineProperty(object, key, { value, writable: true, enumerable: true, configurable: true });
         changed();
     }
 
